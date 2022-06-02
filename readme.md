@@ -1,6 +1,6 @@
 # Node Express Calculator
 
-It runs *secrets* operations on the server and returns the result.
+It runs *secret* operations on the server and returns the result.
 
 ![Node Express Calculator](public/SocialImage.jpg)
 

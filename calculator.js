@@ -34,8 +34,6 @@ app.post('/', (req, res) => {
     result = 'Invalid operation';
   }
 
-  console.log(`${num1} ${operator} ${num2} = ${result}`);
-
   // Send the result to the result.html with the variable result
   res.send(`<!DOCTYPE html>
   <html lang="en">

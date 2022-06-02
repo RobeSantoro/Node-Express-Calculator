@@ -1,0 +1,136 @@
+*, html{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(145deg, #99ff00, #0bff34);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: #333 5px 5px 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.operation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* FORM */
+
+.form {
+  display: flex;
+  flex-direction: column;
+	text-align: center;
+	cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+.form input:checked + label{
+	background-color: #e3007d;
+  color: #fff;
+  font-weight: bold;
+  box-shadow:  2px 2px 4px #bebebe,
+  -2px -2px 4px #ffffff;   
+}
+
+label{
+  display: block;
+  border-radius: 5px;
+  background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input{
+  margin: 0px 0px;
+  border-style: none;
+  width: 140px;
+  border-radius: 10px;
+  padding: 2px 10px;
+  border-style: none;
+  line-height: 2rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #d8d8d8, #ffffff);
+  box-shadow:  2px 2px 4px #bebebe,
+               -2px -2px 4px #ffffff;              
+}
+
+.hidden{
+  display: none;
+}
+
+.custom-select {
+  cursor: pointer;
+  border-radius: 10px;  padding: 2px 10px;
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;         
+}
+
+
+button {
+  border-radius: 10px;
+  border-style: none;
+  height: 50px;
+  background-color: #e3007d;
+  box-shadow:  2px 2px 4px #bebebe,
+               -2px -2px 4px #ffffff;   
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #ff00a6;
+  transition: 0.2s;
+  box-shadow:  4px 4px 5px #8e8e8e,
+  -4px -4px 5px #ffffff;   
+}
+
+input:focus {
+  outline: none;
+  border: #333 1px solid;
+} 

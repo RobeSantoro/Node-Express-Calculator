@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="panel">
+        <h1>Calculator</h1>
+        <p>Insert Numbers and select an operation</p>
+        <form action="/" method="post" class="form cf">
+          <div class="operation plan cf ">
+            <input
+              maxlength="7"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number"
+              name="num1"
+              placeholder=""
+              autocomplete="off"
+            >
+
+            <div class="custom-select">
+              <input class="hidden" id="+" type="radio" name="operator" value="+">
+              <label for="+">+</label>
+              <input class="hidden" id="-" type="radio" name="operator" value="-">
+              <label for="-">-</label>
+              <input class="hidden" id="x" type="radio" name="operator" value="x">
+              <label for="x">x</label>
+              <input class="hidden" id=":" type="radio" name="operator" value=":">
+              <label for=":">:</label>
+            </div>
+
+            <input
+              maxlength="7"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number"
+              name="num2"
+              placeholder=""
+              autocomplete="off"
+            >
+
+          </div>
+          <button type="submit" name="submit">Calculate</button>
+        </form>
+      </div>
+    </div>
+    <script type="javascript"></script>
+  </body>
+
+</html>

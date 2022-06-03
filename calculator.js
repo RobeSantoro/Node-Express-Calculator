@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
 
-  let num1 = Number(req.body.num1);
-  let num2 = Number(req.body.num2);
+  let num1 = parseInt(req.body.num1);
+  let num2 = parseInt(req.body.num2);
   let operator = req.body.operator;
 
   let result = 0;
@@ -54,7 +54,7 @@ app.post('/', (req, res) => {
           <form action="/" method="post" class="form cf">
             <div class="operation plan cf ">
               <input
-                maxlength="7"
+                maxlength="20"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                 type="number"
                 name="num1"
@@ -75,7 +75,7 @@ app.post('/', (req, res) => {
               </div>
   
               <input
-                maxlength="7"
+                maxlength="20"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                 type="number"
                 name="num2"
@@ -100,7 +100,7 @@ app.post('/', (req, res) => {
   </html>`);
 });
 
-app.listen(3000, () => {
+app.listen(3000, "192.168.1.159", () => {
   console.log('Example app listening on port 3000!');
 });
 
